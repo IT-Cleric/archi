@@ -67,12 +67,6 @@ public class WorkbenchCleaner {
                 
                 // delete .metadata folder
                 deleteFolder(new File(instanceLoc.getURL().getPath(), METADATA_FOLDER));
-                
-                // delete .config folder
-                Location configLoc = Platform.getConfigurationLocation();
-                if(configLoc != null) {
-                    deleteFolder(new File(configLoc.getURL().getPath()));
-                }
             }
         }
     }
